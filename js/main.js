@@ -19,8 +19,38 @@ function changeBgColor() {
   bgColor.style.color = hexColor;
   bgColorTitle.style.color = hexColor;
   changeBgContainer.style.backgroundColor = hexColor;
-  changeBgContainer.style.backgroundColor = hexColor;
 }
+
 changeBgBtn.addEventListener("click", changeBgColor);
 
 // End Change Backgorund Color Component
+
+// Start Counter Component
+
+const counterValue = document.querySelector(".counter-value");
+const counterBtns = document.querySelectorAll(".counter-btn");
+let count = 0;
+
+counterBtns.forEach(function (btn) {
+  btn.addEventListener("click", function (event) {
+    if (event.target.innerText === "DECREASE") {
+      count = count - 1;
+    } else if (event.target.innerText === "RESET") {
+      count = 0;
+    } else if (event.target.innerText === "INCREASE") {
+      count = count + 1;
+    }
+
+    counterValue.innerText = count;
+
+    if (count < 0) {
+      counterValue.style.backgroundColor = "red";
+    } else if (count > 0) {
+      counterValue.style.backgroundColor = "green";
+    } else {
+      counterValue.style.backgroundColor = "#ff6663";
+    }
+  });
+});
+
+// End Counter Component

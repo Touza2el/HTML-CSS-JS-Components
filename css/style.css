@@ -43,4 +43,54 @@
 .change-bg-container .change-bg-content .change-bg-btn-container .change-bg-btn:hover {
   background-color: #ef3c39;
 }
+
+.counter-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-container .counter-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-container .counter-content .counter-title {
+  color: #444;
+  text-transform: capitalize;
+}
+
+.counter-container .counter-content .counter-value {
+  margin: 15px 0 15px 5px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #ff6663;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.counter-container .counter-content .counter-btn-container .counter-btn {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #146580;
+  border: 0;
+  border-radius: 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+.counter-container .counter-content .counter-btn-container .counter-btn:hover {
+  background-color: #0c3c4c;
+}
+
+.counter-container .counter-content .counter-btn-container .counter-btn.reset {
+  margin: 0 10px;
+}
 /*# sourceMappingURL=style.css.map */
