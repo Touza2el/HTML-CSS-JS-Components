@@ -5,6 +5,24 @@
   font-family: roboto;
 }
 
+.component-title {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.component-title h1 {
+  color: #212121;
+  text-transform: capitalize;
+}
+
+.component-title .title-underline {
+  display: inline-block;
+  margin-bottom: 5px;
+  width: 60px;
+  height: 5px;
+  background-color: #ff6663;
+}
+
 .change-bg-container {
   background-color: #146580;
   height: 100vh;
@@ -64,7 +82,7 @@
 }
 
 .counter-container .counter-content .counter-value {
-  margin: 15px 0 15px 5px;
+  margin: 0 0 25px 5px;
   padding: 10px 20px;
   color: #fff;
   background-color: #ff6663;
@@ -92,5 +110,72 @@
 
 .counter-container .counter-content .counter-btn-container .counter-btn.reset {
   margin: 0 10px;
+}
+
+.reviews-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dde4fb;
+}
+
+.reviews-container .review-item {
+  padding: 25px;
+  width: 390px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.714);
+  transition: all 0.5s ease;
+}
+
+.reviews-container .review-item:hover {
+  box-shadow: 0 0 10px #5d5d5d;
+}
+
+.reviews-container .review-item .review-image {
+  width: 130px;
+}
+
+.reviews-container .review-item .review-image img {
+  width: 100%;
+}
+
+.reviews-container .review-item .review-author {
+  margin: 10px 0 5px 0;
+  color: #212121;
+  text-transform: capitalize;
+}
+
+.reviews-container .review-item .review-job {
+  color: #ff6663;
+  text-transform: capitalize;
+}
+
+.reviews-container .review-item .review-info {
+  margin: 15px 0;
+  color: gray;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.reviews-container .review-item .review-btn button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #0c3c4c;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  outline: none;
+}
+
+.reviews-container .review-item .review-btn button:hover {
+  background-color: #071f27;
 }
 /*# sourceMappingURL=style.css.map */

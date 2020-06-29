@@ -5,6 +5,26 @@
   font-family: roboto;
 }
 
+// Start Component Title
+
+.component-title {
+  padding-bottom: 40px;
+  text-align: center;
+  h1 {
+    color: #212121;
+    text-transform: capitalize;
+  }
+  .title-underline {
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 60px;
+    height: 5px;
+    background-color: #ff6663;
+  }
+}
+
+// End Component Title
+
 // Start Change Background Color Component
 
 .change-bg-container {
@@ -63,7 +83,7 @@
       text-transform: capitalize;
     }
     .counter-value {
-      margin: 15px 0 15px 5px;
+      margin: 0 0 25px 5px;
       padding: 10px 20px;
       color: #fff;
       background-color: #ff6663;
@@ -95,3 +115,68 @@
 }
 
 // End Counter Component
+
+// Start Reviews Component
+
+.reviews-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dde4fb;
+  .review-item {
+    padding: 25px;
+    width: 390px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.714);
+    transition: all 0.5s ease;
+    &:hover {
+      box-shadow: 0 0 10px rgb(93, 93, 93);
+    }
+    .review-image {
+      width: 130px;
+
+      img {
+        width: 100%;
+      }
+    }
+    .review-author {
+      margin: 10px 0 5px 0;
+      color: #212121;
+      text-transform: capitalize;
+    }
+    .review-job {
+      color: #ff6663;
+      text-transform: capitalize;
+    }
+    .review-info {
+      margin: 15px 0;
+      color: gray;
+      text-align: center;
+      line-height: 1.4;
+    }
+    .review-btn {
+      button {
+        margin: 5px;
+        padding: 10px 15px;
+        background-color: #0c3c4c;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        transition: background 0.5s ease;
+        outline: none;
+        &:hover {
+          background-color: #071f27;
+        }
+      }
+    }
+  }
+}
+
+// End Reviews Component
