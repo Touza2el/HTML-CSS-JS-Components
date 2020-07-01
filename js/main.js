@@ -141,3 +141,7 @@ nextButton.addEventListener("click", function () {
 });
 
 // End Reviews Component
+
+// Start Navbar Component
+
+// End Navbar Component
