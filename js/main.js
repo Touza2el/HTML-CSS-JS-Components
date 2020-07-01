@@ -1,3 +1,7 @@
+// Start Navbar Component
+
+// End Navbar Component
+
 // Start Change Backgorund Color Component
 
 const changeBgContainer = document.querySelector(".change-bg-container");
@@ -141,7 +145,3 @@ nextButton.addEventListener("click", function () {
 });
 
 // End Reviews Component
-
-// Start Navbar Component
-
-// End Navbar Component

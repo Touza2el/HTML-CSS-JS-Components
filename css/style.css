@@ -58,166 +58,6 @@ button {
   background-color: #146580;
 }
 
-.change-bg-container {
-  background-color: #146580;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
-}
-
-.change-bg-container .change-bg-content .bg-color-title {
-  padding: 20px 30px;
-  background-color: #fff;
-  color: #444;
-  border-radius: 5px;
-  text-transform: capitalize;
-}
-
-.change-bg-container .change-bg-content .change-bg-btn-container {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.change-bg-container .change-bg-content .change-bg-btn-container .change-bg-btn {
-  padding: 10px;
-  color: #fff;
-  background-color: #146580;
-  font-size: 16px;
-  text-transform: capitalize;
-  border: none;
-  border-radius: 4px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  transition: background 0.4s ease;
-}
-
-.change-bg-container .change-bg-content .change-bg-btn-container .change-bg-btn:hover {
-  background-color: #ef3c39;
-}
-
-.counter-container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
-}
-
-.counter-container .counter-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.counter-container .counter-content .counter-title {
-  color: #444;
-  text-transform: capitalize;
-}
-
-.counter-container .counter-content .counter-value {
-  margin: 0 0 25px 5px;
-  padding: 10px 20px;
-  color: #fff;
-  background-color: #ff6663;
-  border-radius: 3px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.counter-container .counter-content .counter-btn-container .counter-btn {
-  padding: 10px 20px;
-  color: #fff;
-  background-color: #146580;
-  border: 0;
-  border-radius: 3px;
-  font-size: 14px;
-  text-transform: uppercase;
-  outline: none;
-  cursor: pointer;
-  transition: background 0.5s ease;
-}
-
-.counter-container .counter-content .counter-btn-container .counter-btn:hover {
-  background-color: #0c3c4c;
-}
-
-.counter-container .counter-content .counter-btn-container .counter-btn.reset {
-  margin: 0 10px;
-}
-
-.reviews-container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #dde4fb;
-  display: none;
-}
-
-.reviews-container .review-item {
-  padding: 25px;
-  width: 390px;
-  height: 407px;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #eee;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(128, 128, 128, 0.714);
-  transition: animation 0.5s ease;
-}
-
-.reviews-container .review-item:hover {
-  box-shadow: 0 0 10px #5d5d5d;
-}
-
-.reviews-container .review-item .review-image {
-  width: 130px;
-}
-
-.reviews-container .review-item .review-image img {
-  width: 100%;
-}
-
-.reviews-container .review-item .review-author {
-  margin: 10px 0 5px 0;
-  color: #212121;
-  text-transform: capitalize;
-}
-
-.reviews-container .review-item .review-job {
-  color: #ff6663;
-  text-transform: capitalize;
-}
-
-.reviews-container .review-item .review-info {
-  margin: 15px 0;
-  color: gray;
-  text-align: center;
-  line-height: 1.4;
-}
-
-.reviews-container .review-item .review-btn button {
-  margin: 5px;
-  padding: 10px 15px;
-  background-color: #0c3c4c;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  transition: background 0.5s ease;
-  outline: none;
-}
-
-.reviews-container .review-item .review-btn button:hover {
-  background-color: #071f27;
-}
-
 .nav-bar-container {
   height: 100vh;
 }
@@ -302,8 +142,166 @@ button {
 }
 
 .nav-bar-container .nav-bar-wrapper .nav-bar-content .mobile-menu i {
+  color: #146580;
   font-size: 25px;
   cursor: pointer;
+}
+
+.change-bg-container {
+  background-color: #146580;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.change-bg-container .change-bg-content .bg-color-title {
+  padding: 20px 30px;
+  background-color: #fff;
+  color: #444;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.change-bg-container .change-bg-content .change-bg-btn-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.change-bg-container .change-bg-content .change-bg-btn-container .change-bg-btn {
+  padding: 10px;
+  color: #fff;
+  background-color: #146580;
+  font-size: 16px;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.4s ease;
+}
+
+.change-bg-container .change-bg-content .change-bg-btn-container .change-bg-btn:hover {
+  background-color: #ef3c39;
+}
+
+.counter-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-container .counter-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-container .counter-content .counter-title {
+  color: #444;
+  text-transform: capitalize;
+}
+
+.counter-container .counter-content .counter-value {
+  margin: 0 0 25px 5px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #ff6663;
+  border-radius: 3px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.counter-container .counter-content .counter-btn-container .counter-btn {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #146580;
+  border: 0;
+  border-radius: 3px;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+.counter-container .counter-content .counter-btn-container .counter-btn:hover {
+  background-color: #0c3c4c;
+}
+
+.counter-container .counter-content .counter-btn-container .counter-btn.reset {
+  margin: 0 10px;
+}
+
+.reviews-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dde4fb;
+}
+
+.reviews-container .review-item {
+  padding: 25px;
+  width: 390px;
+  height: 407px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.714);
+  transition: animation 0.5s ease;
+}
+
+.reviews-container .review-item:hover {
+  box-shadow: 0 0 10px #5d5d5d;
+}
+
+.reviews-container .review-item .review-image {
+  width: 130px;
+}
+
+.reviews-container .review-item .review-image img {
+  width: 100%;
+}
+
+.reviews-container .review-item .review-author {
+  margin: 10px 0 5px 0;
+  color: #212121;
+  text-transform: capitalize;
+}
+
+.reviews-container .review-item .review-job {
+  color: #ff6663;
+  text-transform: capitalize;
+}
+
+.reviews-container .review-item .review-info {
+  margin: 15px 0;
+  color: gray;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.reviews-container .review-item .review-btn button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #0c3c4c;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.5s ease;
+  outline: none;
+}
+
+.reviews-container .review-item .review-btn button:hover {
+  background-color: #071f27;
 }
 
 @media (max-width: 950px) {
@@ -333,12 +331,13 @@ button {
     color: #fff;
   }
   .nav-bar-container .nav-bar-wrapper .container .nav-bar-content .nav-bar-links ul .list-item-skills {
+    padding: 23px 0px 23px 0px;
     cursor: pointer;
   }
   .nav-bar-container .nav-bar-wrapper .container .nav-bar-content .nav-bar-links ul .list-item-skills i {
     color: #ff6663;
     top: 24px;
-    left: -80px;
+    left: -60px;
   }
   .nav-bar-container .nav-bar-wrapper .container .nav-bar-content .mobile-menu {
     display: block;
