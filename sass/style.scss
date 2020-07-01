@@ -13,9 +13,6 @@ $secondary-color: #ff6663;
 // End Variables
 
 // Start General Styles
-body {
-  height: 1000px;
-}
 
 .container {
   width: 85%;
@@ -316,10 +313,10 @@ button {
       .nav-bar-content {
         height: 100%;
         .nav-bar-links {
-          position: fixed;
+          position: absolute;
           top: 66px;
           right: 0;
-          width: 50%;
+          width: 42%;
           background-color: $primary-color;
           ul {
             flex-direction: column;

@@ -5,10 +5,6 @@
   font-family: roboto;
 }
 
-body {
-  height: 1000px;
-}
-
 .container {
   width: 85%;
   margin: auto;
@@ -315,10 +311,10 @@ button {
     height: 100%;
   }
   .nav-bar-container .nav-bar-wrapper .container .nav-bar-content .nav-bar-links {
-    position: fixed;
+    position: absolute;
     top: 66px;
     right: 0;
-    width: 50%;
+    width: 42%;
     background-color: #146580;
   }
   .nav-bar-container .nav-bar-wrapper .container .nav-bar-content .nav-bar-links ul {
