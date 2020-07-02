@@ -1,3 +1,10 @@
+| Data
+
+| HTML
+| CSS
+| JavaScript
+
+
 | Coding = Manipulating Data Using Vanilla JavaScript
 
 | Data = Numbers - Strings - Booleans - Arrays - Objects
@@ -7,3 +14,6 @@
 | DOM => Querying The DOM - Traversing The DOM - Manipulating The DOM
 
 | Events => addEventListener("Event",Function)
+
+
+| Data | => | HTML - CSS - JavaScript | => | Text Editor | => | Web Browser | => Component => Web Page => Website

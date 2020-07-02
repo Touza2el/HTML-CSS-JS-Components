@@ -1,5 +1,22 @@
 // Start Navbar Component
 
+const navbarLinks = document.querySelector(".nav-bar-links");
+const mobileMenu = document.querySelector(".mobile-menu");
+const closeMobileMenuBtn = document.querySelector(".close-mobile-menu-btn");
+
+function toggleMobileMenu() {
+  if (!navbarLinks.hasAttribute("id")) {
+    navbarLinks.setAttribute("id", "show-mobile-menu");
+  } else {
+    navbarLinks.removeAttribute("id", "show-mobile-menu");
+  }
+}
+mobileMenu.addEventListener("click", toggleMobileMenu);
+
+closeMobileMenuBtn.addEventListener("click", function () {
+  navbarLinks.removeAttribute("id", "show-mobile-menu");
+});
+
 // End Navbar Component
 
 // Start Change Backgorund Color Component
