@@ -15,5 +15,18 @@
 
 | Events => addEventListener("Event",Function)
 
+----- ----- ----- -----
 
-| Data | => | HTML - CSS - JavaScript | => | Text Editor | => | Web Browser | => Component => Web Page => Website
+| Content = Data 
+
+| HTML - CSS - JavaScript
+
+| Text Editor = Visual Studio Code
+
+| Web Browser = Google Chrome
+
+| HTML - CSS - JavaScript Components 
+
+| Web Page = Collection of Components
+
+| Website = Collection of Web Pages

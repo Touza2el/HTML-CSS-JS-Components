@@ -162,3 +162,31 @@ nextButton.addEventListener("click", function () {
 });
 
 // End Reviews Component
+
+// Start Modal Component
+
+const modalOverlay = document.querySelector(".modal-overlay");
+const openModalBtn = document.querySelector(".open-modal-btn");
+const closeModalBtn = document.querySelector(".close-modal-btn");
+
+openModalBtn.addEventListener("click", function () {
+  modalOverlay.style.display = "flex";
+});
+closeModalBtn.addEventListener("click", function () {
+  modalOverlay.style.display = "none";
+});
+
+// End Modal Component
+
+// Start Questions Coponent
+
+const questionBtns = document.querySelectorAll(".question-btn");
+
+questionBtns.forEach(function (btn) {
+  btn.addEventListener("click", function (e) {
+    const currentQuestion = e.currentTarget.parentElement.parentElement;
+    currentQuestion.classList.toggle("show-text");
+  });
+});
+
+// End Questions Component
