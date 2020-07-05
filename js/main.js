@@ -190,3 +190,173 @@ questionBtns.forEach(function (btn) {
 });
 
 // End Questions Component
+
+// Start Product Filter Component
+
+const productItems = [
+  {
+    id: 1,
+    title: "full bag tools",
+    category: "design",
+    price: 245,
+    img: "./images/products/1.jpg",
+    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+    inventore ratione rem obcaecati quod dignissimos beatae
+    necessitatibus equi laboriosam doloribus.`,
+  },
+  {
+    id: 2,
+    title: "new tools",
+    category: "coding",
+    price: 45,
+    img: "./images/products/2.jpg",
+    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+    inventore ratione rem obcaecati quod dignissimos beatae
+    necessitatibus equi laboriosam doloribus.`,
+  },
+  {
+    id: 3,
+    title: "facebook ads",
+    category: "marketing",
+    price: 99,
+    img: "./images/products/3.jpg",
+    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+    inventore ratione rem obcaecati quod dignissimos beatae
+    necessitatibus equi laboriosam doloribus.`,
+  },
+  {
+    id: 4,
+    title: "first product",
+    category: "design",
+    price: 199,
+    img: "./images/products/4.jpg",
+    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+    inventore ratione rem obcaecati quod dignissimos beatae
+    necessitatibus equi laboriosam doloribus.`,
+  },
+  {
+    id: 5,
+    title: "best selling",
+    category: "coding",
+    price: 149,
+    img: "./images/products/5.jpg",
+    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+    inventore ratione rem obcaecati quod dignissimos beatae
+    necessitatibus equi laboriosam doloribus.`,
+  },
+  {
+    id: 6,
+    title: "google ads",
+    category: "marketing",
+    price: 99,
+    img: "./images/products/6.jpg",
+    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+    inventore ratione rem obcaecati quod dignissimos beatae
+    necessitatibus equi laboriosam doloribus.`,
+  },
+  {
+    id: 7,
+    title: "better design",
+    category: "design",
+    price: 99,
+    img: "./images/products/7.jpg",
+    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+    inventore ratione rem obcaecati quod dignissimos beatae
+    necessitatibus equi laboriosam doloribus.`,
+  },
+  {
+    id: 8,
+    title: "web technologies",
+    category: "coding",
+    price: 99,
+    img: "./images/products/8.jpg",
+    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+    inventore ratione rem obcaecati quod dignissimos beatae
+    necessitatibus equi laboriosam doloribus.`,
+  },
+  {
+    id: 9,
+    title: "closing sales",
+    category: "sales",
+    price: 299,
+    img: "./images/products/9.jpg",
+    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+    inventore ratione rem obcaecati quod dignissimos beatae
+    necessitatibus equi laboriosam doloribus.`,
+  },
+  {
+    id: 10,
+    title: "how to sale",
+    category: "sales",
+    price: 69,
+    img: "./images/products/10.jpg",
+    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+    inventore ratione rem obcaecati quod dignissimos beatae
+    necessitatibus equi laboriosam doloribus.`,
+  },
+];
+const productFilterContent = document.querySelector(".product-filter-content");
+const buttonsContainer = document.querySelector(".product-filter-buttons");
+
+function displayFilterButtons() {
+  const categories = productItems.reduce(
+    function (values, item) {
+      if (!values.includes(item.category)) {
+        values.push(item.category);
+      }
+      return values;
+    },
+    ["all"]
+  );
+  const categoryButtons = categories
+    .map(function (category) {
+      return `
+    <button class="filter-btn" data-id=${category}>${category}</button>
+    `;
+    })
+    .join("");
+  buttonsContainer.innerHTML = categoryButtons;
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  filterButtons.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      const category = e.currentTarget.dataset.id;
+      const filteredItems = productItems.filter(function (item) {
+        if (item.category === category) {
+          return item;
+        }
+      });
+      if (category === "all") {
+        displayItems(productItems);
+      } else {
+        displayItems(filteredItems);
+      }
+    });
+  });
+}
+
+function displayItems(itemsToDisplay) {
+  let displayProductItems = itemsToDisplay.map(function (item) {
+    return `
+    <div class="product-filter-item">
+      <div class="product-filter-image">
+        <img src=${item.img} alt=${item.title} />
+      </div>    
+      <div class="product-filter-text">
+        <h4 class="product-title">${item.title}</h4>
+        <h4 class="product-price">$ ${item.price}</h4>
+        <p class="product-description">${item.description}</p>   
+      </div>
+    </div>
+  `;
+  });
+
+  displayProductItems = displayProductItems.join("");
+  productFilterContent.innerHTML = displayProductItems;
+}
+
+window.addEventListener("DOMContentLoaded", function () {
+  displayFilterButtons();
+  displayItems(productItems);
+});
+
+// End Product Filter Component

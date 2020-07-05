@@ -451,6 +451,73 @@ button {
   display: block;
 }
 
+.product-filter-component {
+  padding: 40px 0;
+}
+
+.product-filter-component .product-filter-buttons {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.product-filter-component .product-filter-buttons button {
+  width: 80px;
+  height: 30px;
+  margin: 0 3px;
+  padding: 7px 10px;
+  color: #fff !important;
+  background-color: #ff6663;
+  border-radius: 3px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+.product-filter-component .product-filter-buttons button:hover {
+  background-color: #fd120e;
+}
+
+.product-filter-component .product-filter-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-filter-component .product-filter-content .product-filter-item {
+  width: 48%;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.product-filter-component .product-filter-content .product-filter-item .product-filter-image {
+  margin-right: 3px;
+  border: 2px solid #eee;
+}
+
+.product-filter-component .product-filter-content .product-filter-item .product-filter-image img {
+  display: block;
+  width: 100%;
+}
+
+.product-filter-component .product-filter-content .product-filter-item .product-filter-text {
+  padding: 0 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.product-filter-component .product-filter-content .product-filter-item .product-filter-text .product-title {
+  color: #444;
+}
+
+.product-filter-component .product-filter-content .product-filter-item .product-filter-text .product-price {
+  margin: 5px 0;
+  color: #146580;
+}
+
+.product-filter-component .product-filter-content .product-filter-item .product-filter-text .product-description {
+  color: #5a5a5a;
+  line-height: 1.4;
+}
+
 @media (max-width: 960px) {
   .nav-bar-container .nav-bar-wrapper {
     height: 66px;
