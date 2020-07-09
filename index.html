@@ -8,9 +8,42 @@
     <title>HTML-CSS-JS Components</title>
   </head>
   <body>
+    <!-- Start Navbar Scroll Component -->
+
+    <div class="nav-bar-scroll-container display-none">
+      <div class="nav-bar-scroll-wrapper">
+        <div class="container">
+          <div class="nav-bar-scroll-content">
+            <div class="nav-bar-scroll-logo">
+              <h2>touza2El</h2>
+            </div>
+            <div class="nav-bar-links-container">
+              <ul class="nav-bar-scroll-links">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
+              </ul>
+            </div>
+            <div class="nav-bar-scroll-buttons">
+              <button class="btn-log-in">login</button>
+              <button class="btn-sign-up">sign up</button>
+            </div>
+            <div class="scroll-hamburger-menu">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Navbar Scroll Component -->
+
     <!-- Start Navbar Component -->
 
-    <div class="nav-bar-container">
+    <div class="nav-bar-container display-none">
       <div class="nav-bar-wrapper">
         <div class="container">
           <div class="nav-bar-content">
@@ -49,7 +82,7 @@
 
     <!-- Start Change Background Color Component -->
 
-    <div class="change-bg-container">
+    <div class="change-bg-container display-none">
       <div class="change-bg-content">
         <h2 class="bg-color-title">
           background color : <span class="bg-color">#f1f5f8</span>
@@ -64,7 +97,7 @@
 
     <!-- Start Counter Component -->
 
-    <div class="counter-container">
+    <div class="counter-container display-none">
       <div class="counter-content">
         <div class="component-title">
           <h1>counter component</h1>
@@ -83,7 +116,7 @@
 
     <!-- Start Reviews Component -->
 
-    <div class="reviews-container">
+    <div class="reviews-container display-none">
       <div class="reviews-content">
         <div class="component-title">
           <h1>reviews component</h1>
@@ -115,7 +148,7 @@
 
     <!-- Start Modal Component -->
 
-    <div class="modal-container">
+    <div class="modal-container display-none">
       <div class="modal-content">
         <div class="component-title">
           <h1>modal component</h1>
@@ -139,7 +172,7 @@
 
     <!-- Start Questions Component -->
 
-    <div class="questions-component">
+    <div class="questions-component display-none">
       <div class="questions-content">
         <div class="component-title">
           <h1>questions component</h1>
@@ -214,7 +247,7 @@
 
     <!-- Start Products Filter Component -->
 
-    <div class="product-filter-component">
+    <div class="product-filter-component display-none">
       <div class="component-title">
         <h1>product filter component</h1>
         <span class="title-underline"></span>
@@ -231,6 +264,82 @@
     </div>
 
     <!-- End Products Filter Component -->
+
+    <!-- Start Tabs Component -->
+
+    <div class="tabs-component display-none">
+      <div class="tabs-content">
+        <div class="component-title">
+          <h1>tabs component</h1>
+          <span class="title-underline"></span>
+        </div>
+        <div class="tabs">
+          <div class="tabs-image">
+            <img
+              class="design active"
+              src="images/tabs/tabs-image1.jpg"
+              alt="tabs-image"
+            />
+            <img
+              class="coding"
+              src="images/tabs/tabs-image2.jpg"
+              alt="tabs-image"
+            />
+            <img
+              class="marketing"
+              src="images/tabs/tabs-image3.jpg"
+              alt="tabs-image"
+            />
+          </div>
+          <div class="tabs-info">
+            <div class="tabs-info-buttons">
+              <button class="tab-btn active" data-id="design">design</button>
+              <button class="tab-btn" data-id="coding">coding</button>
+              <button class="tab-btn" data-id="marketing">marketing</button>
+            </div>
+            <div class="tabs-info-text">
+              <div id="design" class="tab-description active">
+                <h4>desing</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  dicta. Dolor facilis recusandae ea unde aut molestiae
+                  excepturi dicta, facere porro fugit laudantium odio tempore
+                  excepturi quasi officia sit, ex nemo quo accusamus natus rerum
+                  dicta. Dolor facilis recusandae ea unde aut molestiae rerum
+                  excepturi dicta, facere porro fugit laudantium odio tempore
+                  dolore obcaecati, quia, voluptatem deserunt
+                </p>
+              </div>
+              <div id="coding" class="tab-description">
+                <h4>coding</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  excepturi quasi officia sit, ex nemo quo accusamus natus rerum
+                  dicta. Dolor facilis recusandae ea unde aut molestiae
+                  excepturi dicta, facere porro met consectetur adipisicing
+                  elit. Quis excepturi quasi officia sit, ex nemo quo accusamus
+                  natus rerum fugit laudantium odio tempore dolore obcaecati,
+                  quia, voluptatem deserunt
+                </p>
+              </div>
+              <div id="marketing" class="tab-description">
+                <h4>marketing</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  excepturi quasi officia sit, ex nemo quo accusamus natus rerum
+                  dicta. Dolor facilis recusandae ea unde aut molestiae
+                  excepturi dicta, facere porro fugit laudantium odio tempore
+                  dolore obcaecati, quia, voluptatem deserunt Lorem ipsum dolor
+                  sit amet consectetur adipisicing elit. Quis
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Tabs Component -->
 
     <script src="js/main.js"></script>
   </body>

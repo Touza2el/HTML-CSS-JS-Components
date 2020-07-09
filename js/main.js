@@ -1,3 +1,30 @@
+// Start Navbar Scroll Component
+
+const hamburgerMenu = document.querySelector(".scroll-hamburger-menu");
+const navbarWrapper = document.querySelector(".nav-bar-scroll-wrapper");
+const linksContainer = document.querySelector(".nav-bar-links-container");
+const links = document.querySelectorAll(".nav-bar-scroll-links li");
+
+window.addEventListener("scroll", function () {
+  if (window.pageYOffset > 100) {
+    navbarWrapper.classList.add("fix-nav-bar");
+  } else {
+    navbarWrapper.classList.remove("fix-nav-bar");
+  }
+});
+
+hamburgerMenu.addEventListener("click", function () {
+  linksContainer.classList.toggle("toggle-menu");
+});
+
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    linksContainer.classList.remove("toggle-menu");
+  });
+});
+
+// End Navbar Scroll Component
+
 // Start Navbar Component
 
 const navbarLinks = document.querySelector(".nav-bar-links");
@@ -360,3 +387,34 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 // End Product Filter Component
+
+// Start Tabs Component
+const tabsInfo = document.querySelector(".tabs-info");
+const tabButtons = document.querySelectorAll(".tab-btn");
+const tabDescriptions = document.querySelectorAll(".tab-description");
+const tabImages = document.querySelectorAll(".tabs-image img");
+
+tabsInfo.addEventListener("click", function (e) {
+  const id = e.target.dataset.id;
+
+  if (id) {
+    tabButtons.forEach(function (btn) {
+      btn.classList.remove("active");
+      e.target.classList.add("active");
+    });
+
+    tabDescriptions.forEach(function (item) {
+      item.classList.remove("active");
+      const element = document.getElementById(id);
+      element.classList.add("active");
+    });
+
+    tabImages.forEach(function (image) {
+      image.classList.remove("active");
+      const img = document.querySelector(`.${id}`);
+      img.classList.add("active");
+    });
+  }
+});
+
+// End Tabs Component

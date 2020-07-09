@@ -66,9 +66,153 @@ button {
 
 // End Component Title
 
+// Start Navbar Scroll Component
+
+.nav-bar-scroll-container {
+  height: 100vh;
+  .nav-bar-scroll-wrapper {
+    border-bottom: 1px solid rgba(238, 238, 238, 0.5);
+    .container {
+      .nav-bar-scroll-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-bar-links-container {
+          ul {
+            display: flex;
+
+            li {
+              padding: 20px 10px;
+              a {
+                font-size: 15px;
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+        .nav-bar-scroll-buttons {
+          .btn-log-in {
+            margin-right: 10px;
+            padding: 7px 12px;
+          }
+          button {
+            padding: 7px;
+            color: #fff;
+            background-color: #209cee;
+            border-radius: 3px;
+            transition: background 0.4s ease;
+            &:hover {
+              background-color: #1b81c5;
+            }
+          }
+        }
+        .scroll-hamburger-menu {
+          font-size: 25px;
+          cursor: pointer;
+          display: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .nav-bar-scroll-container {
+    .nav-bar-scroll-wrapper {
+      position: relative;
+      .container {
+        .nav-bar-scroll-content {
+          padding: 15px 0;
+          .nav-bar-links-container {
+            position: absolute;
+            right: 0;
+            top: 100%;
+            width: 50%;
+            transform: translate(105%);
+            transition: transform 1s ease;
+            ul {
+              flex-direction: column;
+              background-color: #444;
+              li {
+                text-align: center;
+                transition: background 0.4s ease;
+                &:hover {
+                  background-color: rgb(192, 192, 192);
+                }
+                a {
+                  color: #fff;
+                }
+              }
+            }
+          }
+          .nav-bar-scroll-buttons {
+            display: none;
+          }
+          .scroll-hamburger-menu {
+            display: block;
+            color: #212121;
+          }
+        }
+      }
+    }
+  }
+}
+
+.toggle-menu {
+  transform: translate(0%) !important;
+}
+.fix-nav-bar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  background-color: #444;
+  animation-name: NavbarAnimation;
+  animation-duration: 1.5s;
+}
+
+.nav-bar-scroll-wrapper.fix-nav-bar {
+  .container {
+    .nav-bar-scroll-content {
+      .nav-bar-scroll-logo {
+        h2 {
+          color: #fff;
+        }
+      }
+      .nav-bar-links-container {
+        ul {
+          li {
+            a {
+              color: #fff;
+            }
+          }
+        }
+      }
+      .scroll-hamburger-menu {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@keyframes NavbarAnimation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+// End Navbar Scroll Component
+
 // Start Navbar Component
 
 .nav-bar-container {
+  display: none;
   height: 100vh;
   .nav-bar-wrapper {
     border-bottom: 1px solid #eee;
@@ -149,7 +293,6 @@ button {
       }
     }
   }
-  // display: none;
 }
 
 // End Navbar Component
@@ -191,7 +334,6 @@ button {
       }
     }
   }
-  // display: none;
 }
 
 // End Change Background Color Component
@@ -242,7 +384,6 @@ button {
       }
     }
   }
-  // display: none;
 }
 
 // End Counter Component
@@ -309,7 +450,6 @@ button {
       }
     }
   }
-  // display: none;
 }
 
 // End Reviews Component
@@ -375,7 +515,6 @@ button {
       }
     }
   }
-  // display: none;
 }
 
 // End Modal Component
@@ -431,7 +570,6 @@ button {
       }
     }
   }
-  // display: none;
 }
 .question-btn-minus {
   display: none;
@@ -510,6 +648,76 @@ button {
 
 // End Product Filter Component
 
+// Start Tabs Component
+
+.tabs-component {
+  padding: 40px 0;
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabs-content {
+  width: 70%;
+}
+.tabs {
+  display: flex;
+  justify-content: space-between;
+}
+.tabs-image {
+  width: 45%;
+  img {
+    display: none;
+    width: 100%;
+    border-radius: 4px;
+  }
+  img.active {
+    display: block;
+  }
+}
+.tabs-info {
+  width: 50%;
+}
+.tabs-info-buttons {
+  button {
+    margin-right: 5px;
+    padding: 10px;
+    color: #fff;
+    background-color: #209cee;
+    border-radius: 3px;
+    font-size: 14px;
+    outline: none;
+  }
+  button.active {
+    color: #209cee;
+    background-color: #fff;
+    font-weight: bold;
+  }
+}
+.tabs-info-text {
+}
+.tab-description {
+  display: none;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  h4 {
+    margin-bottom: 10px;
+    color: #444;
+  }
+  p {
+    color: #444;
+    line-height: 1.5;
+  }
+}
+.tab-description.active {
+  display: block;
+}
+
+// End Tabs Component
+
 // Start Media Queries
 
 @media (max-width: 960px) {
@@ -580,3 +788,7 @@ button {
 }
 
 // End Media Queries
+
+.display-none {
+  // display: none;
+}
