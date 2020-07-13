@@ -719,68 +719,95 @@ button {
   display: block;
 }
 
-@media (max-width: 960px) {
-  .nav-bar-container .nav-bar-wrapper {
-    height: 66px;
-  }
-  .nav-bar-container .nav-bar-wrapper .container {
-    height: 100%;
-  }
-  .nav-bar-container .nav-bar-wrapper .container .nav-bar-content {
-    height: 100%;
-  }
-  .nav-bar-container .nav-bar-wrapper .container .nav-bar-content .nav-bar-links {
-    position: absolute;
-    top: 66px;
-    right: 0%;
-    width: 41%;
-    height: 90vh;
-    transform: translateX(100%);
-    background-color: #146580;
-    transition: transform 0.8s ease;
-  }
-  .nav-bar-container .nav-bar-wrapper .container .nav-bar-content .nav-bar-links .close-mobile-menu-btn {
-    display: block;
-    position: absolute;
-    top: 7px;
-    left: 7px;
-    color: rgba(255, 255, 255, 0.904);
-    cursor: pointer;
-  }
-  .nav-bar-container .nav-bar-wrapper .container .nav-bar-content .nav-bar-links ul {
-    flex-direction: column;
-  }
-  .nav-bar-container .nav-bar-wrapper .container .nav-bar-content .nav-bar-links ul li {
-    text-align: center;
-  }
-  .nav-bar-container .nav-bar-wrapper .container .nav-bar-content .nav-bar-links ul li:hover {
-    background-color: #0d4658;
-  }
-  .nav-bar-container .nav-bar-wrapper .container .nav-bar-content .nav-bar-links ul li:hover a {
-    margin-right: 80px;
-  }
-  .nav-bar-container .nav-bar-wrapper .container .nav-bar-content .nav-bar-links ul li:hover i {
-    left: -150px;
-  }
-  .nav-bar-container .nav-bar-wrapper .container .nav-bar-content .nav-bar-links ul li a {
-    color: #fff;
-    transition: all 0.6s ease;
-  }
-  .nav-bar-container .nav-bar-wrapper .container .nav-bar-content .nav-bar-links ul .list-item-skills {
-    padding: 23px 0px 23px 0px;
-    cursor: pointer;
-  }
-  .nav-bar-container .nav-bar-wrapper .container .nav-bar-content .nav-bar-links ul .list-item-skills i {
-    color: #ff6663;
-    top: 24px;
-    left: -60px;
-    transition: all 0.6s ease;
-  }
-  .nav-bar-container .nav-bar-wrapper .container .nav-bar-content .mobile-menu {
-    display: block;
-  }
-  #show-mobile-menu {
-    transform: translateX(0%);
-  }
+.countdown-timer-component {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-timer {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.countdown-timer-image {
+  width: 48%;
+}
+
+.countdown-timer-image img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.countdown-timer-info {
+  width: 48%;
+}
+
+.countdown-timer-info h2 {
+  margin-bottom: 20px;
+  color: #146580;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.countdown-timer-info h4 {
+  text-transform: initial;
+}
+
+.countdown-timer-info p {
+  margin: 10px 0;
+  color: gray;
+  line-height: 1.4;
+}
+
+.deadline {
+  display: flex;
+}
+
+.deadline .deadline-format div {
+  margin-right: 10px;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #212121;
+  border-radius: 5px;
+}
+
+.deadline .deadline-format div h4 {
+  text-align: center;
+}
+
+.deadline .deadline-format div span {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.countdown-btn {
+  margin-top: 35px;
+}
+
+.countdown-btn button {
+  padding: 10px 40px;
+  color: #fff;
+  background-color: #ff6663;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background 0.4s ease;
+}
+
+.countdown-btn button:hover {
+  background-color: #ff3936;
+}
+
+.display-none {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

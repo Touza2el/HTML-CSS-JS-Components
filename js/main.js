@@ -418,3 +418,45 @@ tabsInfo.addEventListener("click", function (e) {
 });
 
 // End Tabs Component
+
+// Start Countdown Timer Component
+
+const offerEnd = document.querySelector(".offer-end");
+const deadline = document.querySelector(".deadline");
+const deadlineItems = document.querySelectorAll(".deadline-item");
+
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+const weekdays = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+
+let futureDate = new Date(2020, 7, 13, 17, 30, 0);
+const year = futureDate.getFullYear();
+const hours = futureDate.getHours();
+const minutes = futureDate.getMinutes();
+const month = months[futureDate.getMonth()];
+const day = weekdays[futureDate.getDay()];
+const date = futureDate.getDate();
+
+offerEnd.textContent = `Offer Ends on ${day}, ${date} ${month} ${year} ${hours}:${minutes} am `;
+
+// End Countdown Timer Component

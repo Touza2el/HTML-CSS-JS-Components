@@ -695,8 +695,6 @@ button {
     font-weight: bold;
   }
 }
-.tabs-info-text {
-}
 .tab-description {
   display: none;
   margin-top: 20px;
@@ -718,77 +716,89 @@ button {
 
 // End Tabs Component
 
-// Start Media Queries
+// Start Countdown Timer Component
 
-@media (max-width: 960px) {
-  .nav-bar-container {
-    .nav-bar-wrapper {
-      height: 66px;
-      .container {
-        height: 100%;
-        .nav-bar-content {
-          height: 100%;
-          .nav-bar-links {
-            position: absolute;
-            top: 66px;
-            right: 0%;
-            width: 41%;
-            height: (100vh - 10vh);
-            transform: translateX(100%);
-            background-color: $primary-color;
-            transition: transform 0.8s ease;
-            .close-mobile-menu-btn {
-              display: block;
-              position: absolute;
-              top: 7px;
-              left: 7px;
-              color: rgba(255, 255, 255, 0.904);
-              cursor: pointer;
-            }
-            ul {
-              flex-direction: column;
-              li {
-                text-align: center;
-                &:hover {
-                  background-color: #0d4658;
-                  a {
-                    margin-right: 80px;
-                  }
-                  i {
-                    left: -150px;
-                  }
-                }
-                a {
-                  color: #fff;
-                  transition: all 0.6s ease;
-                }
-              }
-              .list-item-skills {
-                padding: 23px 0px 23px 0px;
-                cursor: pointer;
-                i {
-                  color: $secondary-color;
-                  top: 24px;
-                  left: -60px;
-                  transition: all 0.6s ease;
-                }
-              }
-            }
-          }
-          .mobile-menu {
-            display: block;
-          }
-        }
+.countdown-timer-component {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.countdown-timer {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.countdown-timer-image {
+  width: 48%;
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+.countdown-timer-info {
+  width: 48%;
+  h2 {
+    margin-bottom: 20px;
+    color: #146580;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  h4 {
+    text-transform: initial;
+  }
+  p {
+    margin: 10px 0;
+    color: gray;
+    line-height: 1.4;
+  }
+}
+.deadline {
+  display: flex;
+  .deadline-format {
+    div {
+      margin-right: 10px;
+      width: 65px;
+      height: 65px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      color: #fff;
+      background-color: #212121;
+      border-radius: 5px;
+      h4 {
+        text-align: center;
+      }
+      span {
+        text-align: center;
+        text-transform: capitalize;
       }
     }
   }
-  #show-mobile-menu {
-    transform: translateX(0%);
+}
+
+.countdown-btn {
+  margin-top: 35px;
+  button {
+    padding: 10px 40px;
+    color: #fff;
+    background-color: #ff6663;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background 0.4s ease;
+    &:hover {
+      background-color: #ff3936;
+    }
   }
 }
 
-// End Media Queries
+// End Countdown Timer Component
 
 .display-none {
-  // display: none;
+  display: none;
 }
